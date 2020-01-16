@@ -48,3 +48,36 @@ var myObj = {
   console.log(checkObj("pet"));
   console.log(checkObj("bed"));
   
+
+  /* Manipulating Complex Objects */
+  // Somtimes you may want to store data in a flexible data structure.
+  //An object can handle flexible data (strings, numbers, booleans, functions and objects).
+  // JavaScript Object Notation or JSON is a related data interchange format used to store data.
+
+  var myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },
+    {
+      "artist": "Drake",
+      "title": "Views",
+      "release_year": 2016,
+      "formats": [
+        "CD",
+        "Vinyl",
+        "Streaming"
+      ],
+      "gold": true,
+      "platinum": true
+    }
+    // Add record here
+  ];
+  
