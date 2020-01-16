@@ -45,4 +45,6 @@ var myObj = {
   
   // Test your code by modifying these values
   console.log(checkObj("gift"));
+  console.log(checkObj("pet"));
+  console.log(checkObj("bed"));
   
