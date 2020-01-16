@@ -127,7 +127,7 @@ var collection = {
     if(value === ""){
       delete collection[id][prop];
     }
-  
+    console.log(collection);
     return collection;
   }
   
@@ -139,3 +139,30 @@ var collection = {
   updateRecords(2468, "tracks", "Free");
   updateRecords(2548, "tracks", "");
   updateRecords(1245, "album", "Riptide");
+
+  /****** Loops *******
+    * While Loops 
+     * Runs "while" a specific condition is true and stops when false.
+    * For Loops
+     * Most common. Runs for a specific amount of time.
+     * for ([initialization]; [condition]; [final-expression])
+  */
+
+ function multiplyAll(arr) {
+    var product = 1;
+    // Only change code below this line
+    for(var i = 0; i < arr.length; i++){
+      for(var o = 0; o < arr[i].length; o++){
+        product*= arr[i][o];
+      }
+    }
+    // Only change code above this line
+    return product;
+  }
+  
+  // Modify values below to test your code
+  multiplyAll([[1,2],[3,4],[5,6,7]]);
+  
+  console.log(multiplyAll([[1],[2],[3]]));
+  console.log(multiplyAll([[1,2],[3,4],[5,6,7]]) );
+  console.log(multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]));
