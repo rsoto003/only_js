@@ -166,3 +166,36 @@ var collection = {
   console.log(multiplyAll([[1],[2],[3]]));
   console.log(multiplyAll([[1,2],[3,4],[5,6,7]]) );
   console.log(multiplyAll([[5,1],[0.2, 4, 0.5],[3, 9]]));
+
+    /** 
+   * Do...While Loops
+   * called do...while b/c it will do one pass opf the code inside the loop no matter 
+   * what, and then continue to run the loop while the specified condition 
+   * evaluates to true
+   * 
+   * in a while loop the condition would evaluate to false and never run,
+   * but this is not the case with a do...while loop
+   * var ourArray = []; 
+    var i = 5;
+    do {
+        ourArray.push(i);
+        i++;
+    } while (i < 5);
+   * **/
+
+
+   /* Replace Loops using Recursion */
+   /**
+    * Recursion is the concept that a function can be expressed in terms of itself
+    * 
+    * 
+    * 
+    */
+
+   function sum(arr, n) {
+      if(n <= 0){
+        return arr[0];
+      } else {
+        return sum(arr, n - 1) + arr[n];
+      }
+  }
