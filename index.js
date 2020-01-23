@@ -246,3 +246,15 @@ function lookUpProfile(name, prop){
 lookUpProfile("Akira", "likes");
 lookUpProfile("Sherlock", "likes");
 lookUpProfile("Harry","likes");
+
+
+/* 
+    Ternary Operators 
+    condition ? statement-if-true : statement-if-false;
+
+*/
+function checkEqual(a, b) {
+    return a === b ? "Equal" : "Not Equal";
+}
+
+checkEqual(1, 2);
