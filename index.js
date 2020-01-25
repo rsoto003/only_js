@@ -279,3 +279,15 @@ function countdown(n){
   }
   console.log(countdown(5)); // [5, 4, 3, 2, 1]
   
+/* Recursion to create range of numbers */
+
+function rangeOfNumbers(startNum, endNum) {
+    if (endNum - startNum === 0) {
+      return [startNum];
+    } else {
+      var numbers = rangeOfNumbers(startNum, endNum - 1);
+      numbers.push(endNum);
+      return numbers;
+    }
+  }
+  
